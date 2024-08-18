@@ -30,8 +30,7 @@ func Start() {
 	})
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(200, "index.html", gin.H{
-			"title": "一款更易用的USDT收款网关",
-			"url":   "https://github.com/v03413/bepusdt",
+			"title": "USDT收款网关",
 		})
 	})
 

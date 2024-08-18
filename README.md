@@ -8,7 +8,7 @@
 <a href="https://golang.org"><img src="https://img.shields.io/badge/Golang-1.22-red" alt="Go version 1.21"></a>
 <a href="https://github.com/gin-gonic/gin"><img src="https://img.shields.io/badge/Gin-v1.9-blue" alt="Gin Web Framework v1.9"></a>
 <a href="https://github.com/go-telegram-bot-api/telegram-bot-api"><img src="https://img.shields.io/badge/Telegram Bot-v5-lightgrey" alt="Golang Telegram Bot Api-v5"></a>
-<a href="https://github.com/v03413/bepusdt"><img src="https://img.shields.io/badge/Release-v1.9.21-green" alt="Release v1.9.21"></a>
+<a href="https://github.com/sky22333/bepusdt"><img src="https://img.shields.io/badge/Release-v1.9.21-green" alt="Release v1.9.21"></a>
 </p>
 
 ## 🪧 介绍
@@ -40,7 +40,7 @@ Bepusdt 所有参数都是以传递环境变量的方式进行配置，大部分
 | EXPIRE_TIME          | `600`        | 订单有效期，单位秒                                                                                                                                     |
 | USDT_RATE            | 空            | USDT汇率，默认留空则获取Okx交易所的汇率(每分钟同步一次)，支持多种写法，如：`7.4` 表示固定7.4、`～1.02`表示最新汇率上浮2%、`～0.97`表示最新汇率下浮3%、`+0.3`表示最新加0.3、`-0.2`表示最新减0.2，以此类推；如参数错误则使用固定值6.4 |
 | AUTH_TOKEN           | `123234`     | 认证Token，对接会用到这个参数                                                                                                                             |
-| LISTEN               | `:8080`      | 服务器HTTP监听地址                                                                                                                                   |
+| LISTEN               | `:7000`      | 服务器HTTP监听地址                                                                                                                                   |
 | TRADE_IS_CONFIRMED   | `0`          | 是否需要网络确认，禁用可以提高回调速度，启用则可以防止交易失败                                                                                                               |
 | APP_URI              | 空            | 应用访问地址，留空则系统自动获取，前端收银台会用到，建议设置，例如：https://token-pay.example.com                                                                               |
 | WALLET_ADDRESS       | 空            | 启动时需要添加的钱包地址，多个请用半角符逗号`,`分开；当然，同样也支持通过机器人添加。                                                                                                  |

@@ -22,5 +22,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends tzdata ca-certi
     && dpkg-reconfigure -f noninteractive tzdata \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 8080
+EXPOSE 7000
 CMD ["/runtime/bepusdt"]

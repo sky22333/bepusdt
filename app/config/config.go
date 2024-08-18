@@ -12,9 +12,9 @@ import (
 )
 
 const defaultExpireTime = 600     // 订单默认有效期 10分钟
-const defaultUsdtRate = 6.4       // 默认汇率
+const defaultUsdtRate = 6.9       // 默认汇率
 const defaultAuthToken = "123234" // 默认授权码
-const defaultListen = ":8080"     // 默认监听地址
+const defaultListen = ":7000"     // 默认监听地址
 const TronServerApiScan = "TRON_SCAN"
 const TronServerApiGrid = "TRON_GRID"
 const defaultPaymentMinAmount = 0.01

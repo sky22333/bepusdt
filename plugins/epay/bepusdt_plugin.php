@@ -4,9 +4,9 @@ class bepusdt_plugin
 {
     static public $info = [
         'name'     => 'bepusdt',
-        'showname' => 'Bepusdt(一款更好用的个人USDT收款网关)',
-        'author'   => '莫名',
-        'link'     => 'https://github.com/v03413/bepusdt', //支付插件作者链接
+        'showname' => '一款更好用的个人USDT收款网关',
+        'author'   => 'sky',
+        'link'     => 'https://github.com/sky22333/bepusdt', //支付插件作者链接
         'types'    => ['usdt'], //支付插件支持的支付方式，可选的有alipay,qqpay,wxpay,bank
         'inputs'   => [ //支付插件要求传入的参数以及参数显示名称，可选的有appid,appkey,appsecret,appurl,appmchid
                         'appid'     => [
