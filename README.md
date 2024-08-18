@@ -25,9 +25,23 @@
 - ✅ 机器人支持查询当前实时汇率，计算实际浮动汇率
 - ✅ 机器人支持任意地址查询 USDT、TRX余额等信息
 - ✅ 订单收款成功和余额变动通知 支持指定群组推送
-- ⭕️ 待实现：原生支持易支付对接，不依赖额外插件
-- ⭕️ 待实现：底层直接采用区块扫描，不依赖三方API
-- ⭕️ 待实现：支持更多监控通知，如TRX交易 能量变动等  
+
+
+
+## Docker-compose一键部署示例
+```
+services:
+  bepusdt:
+    image: sky22333/bepusdt:latest
+    restart: always
+    ports:
+      - "7000:7000"
+    environment:
+      - TG_BOT_TOKEN=机器人token
+      - TG_BOT_ADMIN_ID=TG账户ID
+      - AUTH_TOKEN=认证token
+      - APP_URI=https://支付域名
+```
 
 ## 🛠 参数配置
 
@@ -54,13 +68,7 @@ Bepusdt 所有参数都是以传递环境变量的方式进行配置，大部分
 
 **Ps：所以综上所述，必须设置的参数有`TG_BOT_TOKEN TG_BOT_ADMIN_ID`，否则无法使用！**
 
-## 🚀 安装部署
 
-- [Docker 安装教程（强烈推荐🔥）](./docs/docker.md)
-- [https 配置教程](./docs/ssl.md)
-- [Linux 手动安装教程](./docs/systemd.md)
-- [Linux 时钟同步配置](./docs/systemd-timesyncd.md)
-- [彩虹易支付对接教程](./docs/epay.md)
 
 ## 🤔 常见问题
 
