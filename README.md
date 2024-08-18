@@ -95,6 +95,5 @@ Telegram 搜索`@userinfobot`机器人并启用，返回的ID就是`TG_BOT_ADMIN
 
 - 本项目仅供个人学习研究使用，任何人或组织在使用过程中请符合当地的法律法规，否则产生的任何后果责任自负。
 
-## 🌟 Stargazers over time
+#### 🌟 原项目地址：https://github.com/v03413/bepusdt
 
-[![Stargazers over time](https://starchart.cc/v03413/bepusdt.svg)](https://starchart.cc/v03413/bepusdt)
