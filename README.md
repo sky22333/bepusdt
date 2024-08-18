@@ -32,7 +32,7 @@
 ```
 services:
   bepusdt:
-    image: sky22333/bepusdt:latest
+    image: ghcr.io/sky22333/bepusdt:latest
     restart: always
     ports:
       - "7000:7000"
