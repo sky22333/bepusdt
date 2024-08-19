@@ -27,6 +27,20 @@
 
 
 
+## Docker
+```
+docker run -d \
+  --name bepusdt \
+  --restart always \
+  -p 7000:7000 \
+  -e TG_BOT_TOKEN=机器人token \
+  -e TG_BOT_ADMIN_ID=TG账户ID \
+  -e AUTH_TOKEN=认证token \
+  ghcr.io/sky22333/bepusdt:latest
+```
+域名可以留空，系统会自动获取
+
+
 ## Docker-compose一键部署示例
 ```
 services:
