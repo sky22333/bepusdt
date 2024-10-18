@@ -6,9 +6,9 @@ ADD . .
 RUN set -x \
     && CGO_ENABLED=0 go build -trimpath -ldflags="-s -w -buildid=" -o bepusdt ./main
 
-FROM debian:latest
+FROM debian:12-slim
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 ENV DEBCONF_NOWARNINGS="yes"
 ENV TZ=Asia/Shanghai
 
